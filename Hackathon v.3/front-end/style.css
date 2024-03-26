@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0px;
+}
+
+.chatBot-icon {
+    position: fixed;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 32px;
+    right: 32px;
+}
+
+.chat-bot-container {
+    position: fixed;
+    bottom: 32px;
+    height: 70%;
+    right: 92px;
+    overflow: scroll;
+}
+
+.chatBot-icon img {
+    width: 100%;
+    border: 2px solid blue;
+    border-radius: 50%;
+}
+
+
+.nav-bar-app {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    color: beige;
+    gap: 12px;
+    justify-content: center;
+}
+
+.nav-bar-app h1 {
+    font-size: 22px;
+}
+
+.nav-bar-app i {
+    font-size: 32px;
+}
+
+.app-container {
+    min-height: 100vh;
+    background-color: beige;
+}
+
+.body-container {
+    padding: 22px;
+}
+
+.add-item-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.add-item-info p {
+    font-size: 16px;
+}
+
+.err-msg {
+    color: red;
+}
+
+.input-card {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-item {
+    display: flex;
+    align-items: center;
+}
+
+.input-item label {
+    width: 30%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-card {
+    list-style: none;
+    padding: 0px;
+}
+
+.item-card li {
+    background-color: rgba(196, 196, 163, 0.729);
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+.add-item-info {
+    background-color: azure;
+    display: flex;
+    width: fit-content;
+    padding: 6px 12px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.add-item-info p {
+    margin: 0px;
+}

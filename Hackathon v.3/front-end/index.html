@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries tracking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/77d44bf3cd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="nav-bar-app bg-primary">
+            <h1>Groceries Stock tracking</h1>
+            <i class="fa-solid fa-burger"></i>
+        </nav>
+        <div class="body-container">
+            <div class="chatBot-icon" id="chatBotBtn">
+                <img class="" src="https://www.shutterstock.com/image-vector/chatbot-icon-line-vector-isolate-600nw-1841577400.jpg" alt="" />
+            </div>
+            <div class="add-item-info">
+                <p>Add the new item</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="input-card" id="inputItemForm">
+                <div class="input-item">
+                    <label for="item-name">Item Name</label>
+                    <input type="text" class="form-control" name="item-name" id="item-name" required>
+                </div>
+                <!-- <div class="input-item">
+                    <label for="item-Type">Item Type</label>
+                    <input type="text" class="form-control" name="item-Type" id="item-Type"required>
+                </div> -->
+                <div class="input-item">
+                    <label for="Date of buyed">Date of buyed</label>
+                    <input type="date" class="form-control" name="Date of buyed" id="Dateofbuyed" required>
+                </div>
+                <div class="input-item">
+                    <label for="Expiry Date">Expiry Date</label>
+                    <input type="date" class="form-control" name="ExpiryDate" id="expiryDate" required>
+                </div>
+                <p class="err-msg" id="err-msg"></p>
+                <div>
+                    <button class="btn btn-success" type="submit" id="addBtn">add</button>
+                    <button class="btn btn-danger" id="clearBtn">clear</button>
+                </div>
+            </div>
+            <ul id="item-card" class="item-card">
+            </ul>
+            <button class="btn btn-primary" id="resetBtn">Reset the item</button>
+        </div>
+    </div>
+    <div class="chat-bot-container d-none" id="chatBotContainer">
+        <iframe src="https://www.chatbase.co/chatbot-iframe/DU-RKlvLHybL_nigeJHnc" title="Chatbot" width="300px" height="400px" style="height: 100%; min-height: 700px" frameborder="0">
+        </iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
